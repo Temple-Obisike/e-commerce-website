@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce || Tailwind || Categorypage</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="categorypage.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="text-center text-white bg-black p-2 relative" id="sign-up-container">
+        <p>Sign up and get 20% off to your first order. Sign Up Now</p>
+        <img
+          src="assets/images/close-menu.png"
+          alt=""
+          class="bg-gray-100 absolute top-0 right-0"
+          id="sign-up"
+        />
+      </div>
+      <nav id="hamburger" class="flex justify-between items-center p-4 md:px-8">
+        <div class="flex gap-2 justify-between items-center">
+          <img
+            src="assets/images/hamburger-icon.png"
+            alt="hamburger"
+            class="lg:hidden"
+            width="45"
+          />
+
+          <h1 class="text-2xl font-extrabold">SHOP.CO</h1>
+        </div>
+        <ul
+          class="hidden lg:flex justify-center items-center gap-4 font-bold md:gap-8"
+        >
+          <li
+            class="relative before:content-[''] before:absolute before:min-w-full before:border-2 before:border-black before:-bottom-2 before:opacity-0 hover:before:opacity-100"
+          >
+            <a href="#">Shop</a>
+          </li>
+          <li
+            class="relative before:content-[''] before:absolute before:min-w-full before:border-2 before:border-black before:-bottom-2 before:opacity-0 hover:before:opacity-100"
+          >
+            <a href="#">On Sale</a>
+          </li>
+          <li
+            class="relative before:content-[''] before:absolute before:min-w-full before:border-2 before:border-black before:-bottom-2 before:opacity-0 hover:before:opacity-100"
+          >
+            <a href="#">New Arrivals</a>
+          </li>
+          <li
+            class="relative before:content-[''] before:absolute before:min-w-full before:border-2 before:border-black before:-bottom-2 before:opacity-0 hover:before:opacity-100"
+          >
+            <a href="#">Brands</a>
+          </li>
+        </ul>
+        <div
+          class="hidden lg:flex justify-center items-center gap-2 bg-[#F0F0F0] p-2 rounded-2xl"
+        >
+          <img src="assets/images/search-icon.png" alt="search" />
+          <input
+            type="text"
+            placeholder="Search for products...."
+            class="outline-0 text-[#00000099]"
+          />
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="assets/images/search-icon.png"
+            alt="search"
+            class="lg:hidden"
+          />
+          <img src="assets/images/shoppingcart-icon.png" alt="cart" />
+          <img src="assets/images/profile-icon.png" alt="profile" />
+        </div>
+      </nav>
+    </header>
+    <div class="h-1 bg-gray-300 max-w-[90vw] mx-auto"></div>
+    <main class="md:px-8">
+      <ul class="flex justify-start gap-2 items-center w-68 font-bold p-2">
+        <li><a href="#" id="">Home</a></li>
+        <li>
+          <a href="#"
+            ><img src="assets/images/arrow-right-icon.png" alt=""
+          /></a>
+        </li>
+        <li><a href="#" id="">Casual</a></li>
+      </ul>
+      <div class="flex gap-4">
+        <aside
+          id="categorypage-aside"
+          class="p-4 flex flex-col gap-4 w-[80%] h-[90%] overflow-auto scroll-auto scrollbar-none bg-white fixed top-0 left-0 md:static inset-auto shadow-2xl md:shadow-gray-500 md:rounded-2xl md:w-180"
+        >
+          <div class="flex justify-between gap-2">
+            <p>Filters</p>
+            <img
+              src="assets/images/tune-img.png"
+              alt=""
+              class="hidden md:block"
+              id="categorypage-side-menu-tune"
+            />
+            <img
+              src="assets/images/close-menu.png"
+              alt=""
+              class="bg-black block md:hidden"
+              id="categorypageside-menu-close"
+            />
+          </div>
+          <div class="h-1 bg-gray-300 w-full"></div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between items-center gap-2">
+              <p>T-shirts</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <div class="flex justify-between items-center gap-2">
+              <p>T-shirts</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <div class="flex justify-between items-center gap-2">
+              <p>T-shirts</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <div class="flex justify-between items-center gap-2">
+              <p>T-shirts</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="h-1 bg-gray-300 w-full"></div>
+          <div class="flex flex-col gap-8">
+            <div class="flex gap-2 justify-between items-center">
+              <p>Price</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <input type="range" name="" id="" min="0" max="1000" class="" />
+          </div>
+          <div class="h-1 bg-gray-300 w-full"></div>
+          <div class="flex flex-col gap-8">
+            <div class="flex gap-2 justify-between items-center">
+              <p>Colours</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <div
+              id="color-option-container"
+              class="flex flex-wrap gap-2 justify-center"
+            >
+              <div class="bg-green-500 rounded-2xl w-7 h-7"></div>
+              <div class="bg-red-500 rounded-2xl w-7 h-7"></div>
+              <div class="bg-amber-300 rounded-2xl w-7 h-7"></div>
+              <div class="bg-orange-400 rounded-2xl w-7 h-7"></div>
+              <div class="bg-cyan-400 rounded-2xl w-7 h-7"></div>
+              <div class="bg-blue-600 rounded-2xl w-7 h-7"></div>
+              <div class="bg-purple-600 rounded-2xl w-7 h-7"></div>
+              <div class="bg-pink-500 rounded-2xl w-7 h-7"></div>
+              <div class="bg-white rounded-2xl w-7 h-7 border-2"></div>
+              <div class="bg-black rounded-2xl w-7 h-7"></div>
+            </div>
+          </div>
+          <div class="h-1 bg-gray-300 w-full"></div>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 justify-between items-center">
+              <p>size</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                XX-Small
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                X-Small
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                Small
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                Medium
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                Large
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                X-Large
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                XX-Large
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                3X-Large
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl font-bold hover:bg-black text-white transition-colors duration-150 ease-in-out"
+              >
+                4X-Large
+              </button>
+            </div>
+          </div>
+          <div class="h-1 bg-gray-300 w-full"></div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between gap-2 items-center">
+              <p>Dress style</p>
+              <img src="assets/images/arrow-right-icon.png" alt="" />
+            </div>
+            <div class="flex justify-between gap-4 flex-col">
+              <div class="flex justify-between items-center gap-2">
+                <p>Casual</p>
+                <img src="assets/images/arrow-right-icon.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center gap-2">
+                <p>Formal</p>
+                <img src="assets/images/arrow-right-icon.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center gap-2">
+                <p>Party</p>
+                <img src="assets/images/arrow-right-icon.png" alt="" />
+              </div>
+              <div class="flex justify-between items-center gap-2">
+                <p>Gym</p>
+                <img src="assets/images/arrow-right-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <button
+              class="rounded-2xl p-4 w-full border-2 border-black max-w-40 text-black hover:bg-black font-bold hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              Apply Filter
+            </button>
+          </div>
+        </aside>
+
+        <section class="p-2 flex flex-col gap-8">
+          <div
+            id="casual-most-popular-div"
+            class="flex justify-between items-center"
+          >
+            <p>Casual</p>
+            <div class="flex gap-2 items-center">
+              <p>Showing 1-10 of products</p>
+              <p>Sort by: Most Popular</p>
+            </div>
+          </div>
+          <div
+            id="category-casual-container"
+            class="flex flex-wrap items-center justify-center gap-8 py-8"
+          ></div>
+          <div class="h-1 bg-gray-300 w-full"></div>
+          <div class="flex flex-wrap items-center justify-between py-8 gap-2">
+            <button
+              class="rounded-2xl p-4 w-full border-2 border-black max-w-40 text-black hover:bg-black font-bold hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              ← Previous
+            </button>
+            <div class="flex flex-wrap justify-between items-center gap-2">
+              <button
+                class="p-4 bg-gray-300 rounded-2xl w-[6.5rem] flex justify-center items-center"
+              >
+                1
+              </button>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl w-[6.5rem] flex justify-center items-center"
+              >
+                2
+              </button>
+              <p
+                class="p-4 border-2 rounded-2xl w-[6.5rem] flex justify-center items-center"
+              >
+                ...
+              </p>
+              <button
+                class="p-4 bg-gray-300 rounded-2xl w-[6.5rem] flex justify-center items-center"
+              >
+                5
+              </button>
+            </div>
+            <button
+              class="rounded-2xl p-4 w-full border-2 border-black max-w-40 text-black hover:bg-black font-bold hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              Next →
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="flex flex-col gap-6 bg-[#F0F0F0] items-center p-10 relative">
+      <form
+        action="#"
+        class="w-full rounded-4xl bg-black p-6 flex flex-col justify-between gap-8 md:flex-row"
+      >
+        <h3 class="text-4xl font-extrabold text-white">
+          STAY UPTO DATE ABOUT OUR LATEST OFFERS
+        </h3>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <div
+            class="flex justify-between items-center p-2 bg-white rounded-2xl gap-2 w-full"
+          >
+            <img src="assets/images/gmail-icon.png" alt="" />
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="bg-inherit outline-0 w-full text-[#00000099]"
+            />
+          </div>
+          <button class="p-2 bg-white rounded-2xl font-bold w-full">
+            Subscribe to Newsletter
+          </button>
+        </div>
+      </form>
+      <div class="flex flex-col gap-8">
+        <div class="flex gap-2 flex-col">
+          <h4 class="text-4xl font-extrabold">SHOP.CO</h4>
+          <p>
+            We have clothes that suits your style and which you're proud to
+            wear. From women to men.
+          </p>
+          <div class="flex justify-start items-center gap-2">
+            <img src="assets/images/twitter.png" alt="twitter" />
+            <img src="assets/images/facebook.png" alt="facebook" />
+            <img src="assets/images/instagram.png" alt="instagram" />
+            <img src="assets/images/github.png" alt="github" />
+          </div>
+        </div>
+        <div class="flex justify-between gap-4 flex-wrap">
+          <ul class="flex flex-col justify-center items-start text-start">
+            <li class="font-extrabold text-[1rem]">
+              <a href="#">COMPANY</a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+
+          <ul class="flex flex-col justify-center items-start text-start">
+            <li class="font-extrabold text-[1rem]"><a href="#">HELP</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+
+          <ul class="flex flex-col justify-center items-start text-start">
+            <li class="font-extrabold text-[1rem]"><a href="#">F A Q</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payment</a></li>
+          </ul>
+
+          <ul class="flex flex-col justify-center items-start text-start">
+            <li class="font-extrabold text-[1rem]">
+              <a href="#">RESOURCES</a>
+            </li>
+            <li><a href="#">Free eBook</a></li>
+            <li><a href="#">Development Tutorial</a></li>
+            <li><a href="#">How to - Blog</a></li>
+            <li><a href="#">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="h-1 bg-gray-300 w-full"></div>
+      <div class="flex flex-col justify-center items-center gap-2">
+        <a href="#">Shop.co 2000-2023. All Rights Reserved</a>
+        <div class="flex justify-center items-center gap-4 flex-wrap">
+          <img src="assets/images/visa.png" alt="visa" />
+          <img src="assets/images/mastercard.png" alt="mastercard" />
+          <img src="assets/images/paypal.png" alt="paypal" />
+          <img src="assets/images/applepay.png" alt="applepay" />
+          <img src="assets/images/googlepay.png" alt="googlepay" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
